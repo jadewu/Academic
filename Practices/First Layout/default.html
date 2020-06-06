@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>{{page.title}}</title>
+  <link rel="stylesheet" type="text/css" href="/Users/wuyue/Documents/GitHub/Academic/Practices/First Layout/statics/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="/Users/wuyue/Documents/GitHub/Academic/Practices/First Layout/statics/mine.css">
+  <link rel="stylesheet" type="text/css" href="/Users/wuyue/Documents/GitHub/Academic/Practices/First Layout/statics/svg.css">
+  <h1> First Practice </h1>
+</head>
+
+<body>
+<div class="m-5">
+<div class="row">
+  <div class="column left">
+    <div id="mySidebar" class="sidebar">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="#">General</a>
+      <a href="#">Full Stack</a>
+      <a href="#">Machine Learning</a>
+      <a href="#">User Experience</a>
+    </div>
+    <button class="openbtn" onclick="openNav()">&#9776; Navigate </button>
+    <script>
+      /* Set the width of the sidebar to 250px and the left margin of the page content to 250px */
+        function openNav() {
+          document.getElementById("mySidebar").style.width = "250px";
+          document.getElementById("main").style.marginLeft = "250px";
+        }
+
+        /* Set the width of the sidebar to 0 and the left margin of the page content to 0 */
+        function closeNav() {
+          document.getElementById("mySidebar").style.width = "0";
+          document.getElementById("main").style.marginLeft = "0";
+        }
+    </script>
+  </div>
+
+  <div class="column middle">
+    <ul class="nav nav-pills center-pills" >
+      <li class="active"><a href="#">Home</a></li>
+      <li><a href="#">Activity</a></li>
+      <li><a href="#">Project</a></li>
+      <li><a href="#">People</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+    <div class="content">
+      <h2> Posts, pictures, activities and progresses are displayed here </h2>
+      <p id="rcorners1"> Rounded corner block 1 </p>
+      <p id="rcorners2"> Rounded corner block 2 </p>
+      <p id="rcorners3"> Rounded corner block 3 </p>
+    </div>
+  </div>
+
+  <div class="column right">
+    <div class="icons8-menu"></div>
+    <div class="icons8-search"></div>
+    <div class="icons8-external-link"></div>
+    <div class="icons8-settings"></div>
+    <div class="icons8-contacts"></div>
+
+  </div>
+</div>
+
+
+<footer>
+  <p> @ 2020 STEM-AWAY </p>
+  <div class="icons8-facebook"></div>
+  <div class="icons8-linkedin"></div>
+  <div class="icons8-twitter"></div>
+</footer>
+
+</body>
+</html>
